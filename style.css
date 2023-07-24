@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/sharp-sans');
+
+@font-face {
+    font-family: sharp;
+    src: url(../font/SharpSansNo1-Semibold.ttf);
+}
+
+@font-face {
+    font-family: sharp-bold;
+    src: url(../font/SharpSansNo1-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .brand-logo {
+    position: relative;
+    margin-left: 150px;
+    top: -1.5px;
+} */
+/* #navigation {
+    padding-left: 245px;
+    width: 100%;
+    display: flex;
+    gap: 65%;
+    margin: auto;
+} */
+body {
+    width: 100%;
+
+}
+
+nav {
+    height: 60px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.628);
+}
+
+.sign-in {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(125, 125, 125);
+    font-size: 14px;
+    /* position: relative;
+    top: 0.5px;
+    right: 243px; */
+    text-decoration: underline 0.3px solid rgba(0, 0, 0, 0.381);
+    text-underline-offset: 4px;
+}
+
+.image-section {
+    background-image: url(../img/pizza.jpg);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -5;
+}
+
+
+.image-class {
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+}
+
+.sign-in:hover {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.order {
+    display: flex;
+    font-family: sharp;
+    font-family: 600;
+    font-size: 10px;
+    position: relative;
+    /* z-index: 10; */
+    height: 307.4px;
+    position: relative;
+    top: -125px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.order-info {
+    width: 500px;
+    height: 205.4px;
+    background-color: white;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.283);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.delivery,
+.collect {
+    color: #454545 !important;
+    font-size: 16.5px;
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+    background-color: #cacaca !important;
+    justify-content: center;
+    align-items: center;
+    border: none !important;
+}
+
+#order-img {
+    filter: saturate(0);
+    display: inline-block;
+}
+
+.delivery {
+    width: 42%;
+    display: flex;
+    justify-content: center;
+}
+
+.collect {
+    width: 58%;
+}
+
+.active #order-img {
+    filter: saturate(1);
+    /* background-color: #fff; */
+    border: none;
+}
+
+.active {
+    color: #da291c !important;
+    background-color: white !important;
+    position: relative;
+    left: 0;
+    top: -7px;
+    height: 60px;
+}
+
+.btn {
+    border-top-right-radius: 3px !important;
+    border-top-left-radius: 3px !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    gap: 2px;
+    height: 52px;
+}
+
+.location-info {
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+}
+
+.location-info p {
+    font-size: 14px;
+    width: 90%;
+    padding-left: 2px;
+    line-height: 23px;
+}
+
+.location-info h3 {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -1.4px;
+    padding-top: 5px;
+}
+
+#delivery-input {
+    border: 0.1px solid rgba(0, 0, 0, 0.084);
+    padding-left: 15px;
+    width: 90%;
+    font-size: 16px;
+    color: #585858;
+    height: 45px;
+}
+
+.location {
+    height: 45px;
+    padding-top: 17.5px;
+    width: 86.2%;
+    margin-left: 20px;
+    padding-left: 10px;
+    color: #7eb0ea;
+    font-size: 12px;
+    border: 0.1px solid rgba(0, 0, 0, 0.073);
+}
+
+.location:hover {
+    cursor: pointer;
+}
+
+.divider {
+    position: relative;
+    bottom: 115px;
+    border-top: 2px solid #565656;
+}
+
+.deals-divider {
+    margin-top: 54px;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.deals {
+    position: relative;
+    bottom: 149px;
+    /* left: 42%;
+    right: 42%; */
+    background-color: white;
+    z-index: 1000;
+    width: 300px;
+}
+
+.deals h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25.2px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+}
+
+#deals-card {
+    margin-left: 205px !important;
+    margin-right: 205px !important;
+}
+
+.card-container {
+    margin-top: -145px !important;
+}
+
+#view-deals button {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #0a8020;
+    width: 100%;
+    color: white;
+    margin: auto;
+    height: 60px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 17px;
+}
+
+#view-deals button:hover {
+    cursor: pointer;
+    background-color: #075a16;
+}
+
+/* .deal-img {
+    width: 525px !important;
+    height: 350px !important;
+} */
+.deal-img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 45px;
+    height: 677px;
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+#footer-grid-row {
+    display: flex;
+    /* justify-content: center; */
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 100px !important;
+}
+
+#footer-links h5 {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+#footer-links a {
+    text-decoration: none;
+    font-size: 11px;
+}
+
+#footer-links li {
+    line-height: 16px;
+}
+
+.download {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.feedback {
+    flex-wrap: nowrap;
+    margin-left: 240px;
+    margin-top: 30px;
+    margin-right: 240px;
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif !important;
+    /* width: 473.183px; */
+    /* justify-content: space-between; */
+}
+
+.give {
+    margin-right: 200px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.feedback span {
+    font-size: 15px;
+    letter-spacing: -0.5px;
+}
+
+.feedback button {
+    background-color: #e9ebee;
+    width: 138.4px;
+    height: 42.4px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    /* flex-shrink: 0; */
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback button:hover {
+    background-color: #c1c2c5;
+}
+
+.follow {
+    font-family: 'Open Sans', sans-serif !important;
+    display: flex;
+    margin-left: 400px;
+    flex-direction: column;
+    gap: 10px;
+    /* width: 468px; */
+    float: right;
+    padding-top: 40px;
+    margin-right: 240px;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+    margin-top: -45px;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.social:hover {
+    cursor: pointer;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.footer-text div {
+    text-align: center;
+    width: 1050px;
+}
+
+.footer-text p {
+    color: rgb(120, 131, 140);
+    font-size: 11px;
+    line-height: 20px !important;
+}
+
+.copy {
+    margin-top: -15px;
+}
+
+.certification {
+    display: flex;
+    justify-content: center;
+}
+
+.certification img {
+    background-color: white;
+    border-radius: 4px;
+}
+
+@media (max-width:1400px) {
+    #deals-card {
+        margin-top: -100px;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .give {
+        margin-right: 0;
+    }
+
+    .follow {
+        margin-right: 0;
+    }
+
+    .feedback {
+        justify-content: space-between;
+    }
+}
+
+/* @media (max-width:1000px) {
+
+    .deals-card {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        
+    } 
+
+}*/
+
+@media (max-width:960px) {
+    .image-section {
+        background-image: url(../img/Pizza700jpg.jpg);
+        height: 330px;
+    }
+
+    .feedback {
+        padding-left: 100px;
+    }
+
+    .feedback {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .give {
+        flex-direction: column;
+        /* margin-right: 100px; */
+    }
+
+    .feedback button {
+        width: 365.5px;
+        flex-shrink: 1;
+    }
+
+}
+
+
+@media(max-width:960px) {
+    .order-info {
+        width: 400px;
+        height: 280px;
+    }
+
+    .tabs {
+        width: 400px;
+    }
+}
+
+@media (max-width:767px) {
+    #order-img {
+        display: none;
+    }
+
+    #footer-grid-row {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+
+    .tabs {
+        height: 46px;
+    }
+
+    .order-info {
+        height: 274px;
+    }
+
+    .feedback {
+        padding-left: 30px;
+    }
+
+    footer {
+        height: 750px;
+    }
+}
+
+@media (max-width:640px) {
+
+    .order-info {
+        width: 300px;
+        height: 280px;
+    }
+
+    .image-section {
+        background-image: url(../img/pizza-sm.jpg);
+        height: 330px;
+    }
+
+    .delivery {
+        width: 130px;
+    }
+
+    .collect {
+        overflow: hidden;
+        width: 170px;
+    }
+
+    .tabs {
+        gap: 0px;
+        width: 301px;
+    }
+}
+
+@media (max-width:560px) {
+    .feedback {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    footer {
+        height: 850px;
+    }
+}

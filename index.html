@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Order Pizza Online </title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navigation container d-flex justify-content-between flex-nowrap align-items-center"
+                style="width: 70%;">
+                <a class="brand-logo navbar-brand" href="#">
+                    <img src="img/logo.png" alt="Bootstrap" width="100%" height="30px">
+                </a>
+                <div class="sign-in navbar-text">
+                    Sign in
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="image-section">
+        </section>
+        <section>
+            <div class="order">
+                <div class="tabs" id="tabs">
+                    <button id="btn-del" class="btn delivery" href="#">
+                        <div id="order-img">
+                            <img src="img/ico/delivery-bike-32x32.36bfbc1f71423e3d93e140394dd302f3.gif" width="32px"
+                                height="32px">
+                        </div>
+                        <span>Delivery</span>
+                    </button>
+                    <button id="btn-order" class="btn collect" href="#">
+                        <div id="order-img">
+                            <img src="img/ico/collection-32x32.c3cdbff96f386154787b2945c73a16b6.gif" width="32px"
+                                height="32px">
+                        </div>
+                        <span>Collect from store</span>
+                    </button>
+                </div>
+                <div class="order-info">
+                    <div class="location-info">
+                        <h3>FIND YOUR NEAREST HUT</h3>
+                        <p>
+                            Enter your address to see your local deals, coupons and offers.
+                        </p>
+                        <form class="delivery-form">
+                            <input id="delivery-input" type="text" placeholder="Enter your location for delivery">
+                        </form>
+                    </div>
+                    <div class="location">
+                        <img src="img/ico/icons8-navigation-24.png" width="19px" height="19px">
+                        <span>Find my current location</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <div class="deals-divider">
+            <hr class="divider">
+            <div class="deals">
+                <h3>Our Most Popular Deals</h3>
+            </div>
+        </div>
+        <section id="deals-card">
+            <div class="card-container container">
+                <div class="row d-flex gy-2 gx-2">
+                    <div class="col-md-6">
+                        <img class="deal-img img-fluid"
+                            src="img/deal-cards/one-plus-one-personal.001f14283359b739aa8b2d95f171faaf.1.jpg">
+                    </div>
+                    <div class="col-md-6">
+                        <img class="deal-img img-fluid"
+                            src="img/deal-cards/hut300.312236d18a76801105b271168dc4fab9.1.jpg">
+                    </div>
+                </div>
+                <div id="view-deals">
+                    <button>View all deals</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <!-- Grid container -->
+            <div class="container pt-5" id="footer-links">
+                <div class="row d-flex justify-content-between gx-5 gy-3 m-sm-0" id="footer-grid-row">
+                    <div class="col-5 col-sm-4 col-md-3 col-md">
+                        <h5>Order Now</h5>
+                        <ul class="list-unstyled">
+                            <li><a class="text-white" href="#">Deals</a></li>
+                            <li><a class="text-white" href="#">Pizza</a></li>
+                            <li><a class="text-white" href="#">Sides</a></li>
+                            <li><a class="text-white" href="#">Drinks</a></li>
+                            <li><a class="text-white" href="#">Desserts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-5 col-sm-4 col-md-3 col-md">
+                        <h5>About</h5>
+                        <ul class="list-unstyled">
+                            <li><a class="text-white" href="#">About Us</a></li>
+                            <li><a class="text-white" href="#">Contactless delivery</a></li>
+                            <li><a class="text-white" href="#">Nutrition</a></li>
+                            <li><a class="text-white" href="#">Career</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-5 col-sm-4 col-md-3 col-md">
+                        <h5>Our Policies</h5>
+                        <ul class="list-unstyled">
+                            <li><a class="text-white" href="#">Privacy</a></li>
+                            <li><a class="text-white" href="#">Terms &amp; Conditions</a></li>
+                            <li><a class="text-white" href="#">Responsible disclosure</a></li>
+                            <li><a class="text-white" href="#">FAQs &amp; Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-5 col-sm-4 col-md-3 col-md">
+                        <h5>Visit Pizza Hut</h5>
+                        <ul class="list-unstyled ">
+                            <li><a class="text-white" href="#">Locate a store</a></li>
+                            <li><a class="text-white" href="#">Global Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="download">
+            <a href="#"><img src="img/logo/app-store-ios.fd6d0921ff522febd6e2a4c2fab9af72.svg"></a>
+            <a href="#"> <img src="img/logo/app-store-google-play.b1ffb9f40420b63efe43e34f60bfb682.png" width="130px"
+                    height="40px"></a>
+        </section>
+        <section class="feedback">
+            <div class="give">
+                <span>Help us in serving you better</span>
+                <button class="flex-lg-shrink-1">Give Feedback</button>
+            </div>
+            <div class="follow container">
+                <span>Follow us</span>
+                <div class="social">
+                    <img src="img/ico/social/social-white-facebook.7cce5c98cdf27ef51601f3650f73b465.png" width="20px"
+                        height="20px">
+                    <img src="img/ico/social/social-white-twitter.ef766a459cb51bbdaf9b24eaa5d21289.png" width="20px"
+                        height="20px">
+                    <img src="img/ico/social/social-white-instagram.cf20de72a775ca841c887ea845457fa0.png" width="20px"
+                        height="20px">
+                    <img src="img/ico/social/social-white-youtube.c5d3435334b39f9535c1eeb639938a30.png" width="20px"
+                        height="20px">
+                </div>
+            </div>
+        </section>
+        <section class="footer-text container">
+            <div>
+                <p>Order a delicious pizza on the go, anywhere, anytime. Pizza Hut is happy to assist you with your home
+                    delivery. Every time you order, you get a hot and fresh pizza delivered at your doorstep in less
+                    than
+                    thirty minutes. *T&C Apply.</p>
+                <p class="copy">Hurry up and place your order now!</p>
+                <p class="copy">© 2023 Pizza Hut India. All rights reserved. License Number: 10017011004220</p>
+            </div>
+        </section>
+        <div class="certification">
+            <img src="img/logo/FSAAI-logo.cb99007614b9cff3e0150bce9711641d.svg" width="72px" height="72px">
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
